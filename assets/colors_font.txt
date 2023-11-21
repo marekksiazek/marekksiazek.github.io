@@ -1,0 +1,5 @@
+HEX: #e6f5f6 RGB: 230, 245, 246 CMYK: 6,0,0,3
+HEX: #0097a9 RGB: 0, 151, 169 CMYK: 100,10,0,33
+HEX: #db3eb1 RGB: 219, 62, 177 CMYK: 0,71,19,14
+
+Font: Noto Sans

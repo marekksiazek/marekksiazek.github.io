@@ -1,0 +1,468 @@
+:root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.div_wrap {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.nav_wrap {
+    width: 100%;
+}
+
+.menuPhone {
+    display: none;
+}
+    
+.navigation { 
+    padding: .5em;
+}
+
+.navigation img {
+    padding: 1vw;
+    padding-right: 3vw;
+    max-width: 20vw;
+    float: left;
+    border-radius:50%;
+}
+
+.navigation ul {
+    padding: .5em;
+    list-style: none;
+    display: flex;
+    background-color: #e6f5f6;
+    text-align: center;
+}
+
+.navigation ul li {
+    margin-top: 0;
+}
+
+.navigation ul li a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    color: #0097a9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.navigation_list > li + li {
+    margin-left: 1.5rem;
+}
+
+.navigation_list > .nav_item_right {
+    margin-left: auto;
+}
+
+.navigation_list > .nav_item_right a {
+    font-weight: 900;
+}
+
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: #db3eb1;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+
+.navigation ul li a:hover::after,
+.navigation ul li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.4em, 0);
+  }
+
+
+.buy_course {
+    background-color: rgba(219, 62, 177, 0.4);
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+.text_div {
+    width: 100%;
+    text-align: center;
+}
+
+.course_text_img {
+    margin-top: 0;
+    height: 32vh;
+}
+
+.main_left {
+    width: 45%;
+}
+
+.main_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo_background_childrens {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(219, 62, 177, 0.4);
+    border-radius: 1rem;
+    transform: rotate(5deg);
+}
+
+.photo_background_childrens img {
+    max-height: 80%;
+    max-width: 80%;
+    transform: rotate(-5deg);
+    border-radius: 1rem;
+}
+
+.photo_background_women {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(219, 62, 177, 0.4);
+    border-radius: 1rem;
+    transform: rotate(-5deg);
+}
+
+.photo_background_women img {
+    max-height: 80%;
+    max-width: 80%;
+    transform: rotate(5deg);
+    border-radius: 1rem;
+}
+
+.main_right { 
+    width: 45%;
+    margin: 0;
+    padding: 2rem;
+}
+
+.main_right ul {
+    color: #0097a9;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.main_right  h2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+    color: #db3eb1;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    border-bottom: #db3eb1 solid 4px;
+    text-align: center;
+}
+
+.download {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.download > a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    color: #e6f5f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    background-color: #db3eb1;
+    border-radius: 20px;
+}
+
+.download > a + a {
+    margin: 0 3rem;
+}
+
+.footer_background {
+    width: 100%;
+}
+
+.footer_wrap {
+    width: 100%;
+}
+
+.footer { 
+    background-color: #e6f5f6;
+    height: 100%;
+}
+
+@media screen and (max-width: 1539px) { 
+
+    body {
+        max-width: 95vw;
+    }
+    
+    .navigation ul li a {
+        font-size: 0.9rem;
+    }
+
+    .navigation ul li button {
+        line-height: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .navigation_list > li + li {
+        margin-left: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .download > a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .download > a + a {
+        margin: 0 2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1120px) { 
+
+    body {
+        max-width: 95vw;
+    }
+    
+    .navigation ul li a {
+        font-size: 0.8rem;
+    }
+
+    .navigation ul li button {
+        line-height: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .navigation_list > li + li {
+        margin-left: 0.5rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1081px) { 
+
+    body {
+        max-width: 95vw;
+    }
+    
+    .navigation ul li a {
+        font-size: 0.8rem;
+    }
+
+    .navigation ul li button {
+        line-height: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .navigation_list > li + li {
+        margin-left: 0.5rem;
+    }
+
+    .text_div {
+        max-height: 40vh;
+    }
+
+    .buy_button {
+        line-height: 1.6rem;
+        font-size: 1rem;
+        padding: .3rem 0.7rem;
+    }
+
+    .main_right  h2 {
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        border-bottom: #db3eb1 solid 2px;
+    }
+
+    .main_right ul {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+
+}
+
+@media screen and (max-width: 970px) {
+    .download > a {
+        font-size: 0.9rem;
+    }
+
+    .download > a + a {
+        margin: 0 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 912px) { 
+
+    body {
+        max-width: 95vw;
+    }
+    
+    .navigation ul li a {
+        font-size: 0.7rem;
+    }
+
+    .navigation ul li button {
+        line-height: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .navigation_list > li + li {
+        margin-left: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 843px) {
+
+    body {
+        max-width: 95vw;
+    }
+    
+    .navigation ul li a {
+        font-size: 0.6rem;
+    }
+
+    .navigation ul li button {
+        line-height: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .navigation_list > li + li {
+        margin-left: 0.3rem;
+    }
+
+    .cours_logo {
+        max-width: 15vw;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation ul li a {
+        font-size: 0.7rem;
+    }
+
+    .navigation ul li button {
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .navigation_list > li + li {
+        margin-left: 0.15rem;
+    }
+
+    .course_text_img {
+        max-height: 20vh;
+    }
+
+    .buy_button {
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+        padding: .2rem 0.5rem;
+    }
+
+    .main_right  h2 {
+        letter-spacing: 2px;
+        font-size: 1rem;
+        border-bottom: #db3eb1 solid 2px;
+    }
+
+    .main_right ul {
+        font-size: 0.5rem;
+        line-height: 0.8rem;
+    }
+
+    .download > a {
+        font-size: 0.5rem;
+    }
+
+    .download > a + a {
+        margin: 0 0.5rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 611px) {
+
+    .div_wrap {
+        flex-direction: column;
+    }
+
+    .main_wrap {
+        flex-direction: column;
+    }
+
+    .main_left {
+        width: 95%;
+        margin-bottom: 5rem;   
+    }
+
+    .photo_background_childrens {
+        width: 95%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .photo_background_women {
+        width: 95%;
+        margin-bottom: 5rem;
+    }
+    
+    .main_right {
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,86 @@
+:root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    max-width: 40vw;
+    width: 100%;
+    margin: 10vh auto;
+    background: #e6f5f6;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.pic {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+}
+
+.pic img {
+    max-width: 100%;
+}
+
+.container > h2 {
+    color: red;
+    text-transform: uppercase;
+}
+
+.container > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #db3eb1;
+}
+
+@media screen and (max-width: 1043px) {
+    .container > h2 {
+        font-size: 1rem;
+    }
+
+    .container > a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container > h2 {
+        font-size: 0.7rem;
+    }
+
+    .container > a {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .container > h2 {
+        font-size: 0.5rem;
+    }
+
+    .container > a {
+        font-size: 0.3rem;
+    }
+}

@@ -1,0 +1,424 @@
+
+:root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    padding-top: 3rem;
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.modal_body h1 {
+    color: #0097a9;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.flex_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image_container {
+    flex-basis: 45%;
+    text-align: center;
+}
+
+.img_wrap {
+    flex-basis: 45%;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.logo_register {
+    max-height: 100%;
+    max-width: 80%;
+}
+
+.form_wrap {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.price_wrap {
+    flex-basis: 45%;
+}
+
+.text_wrap{
+    flex-basis: 45%;
+    float: left;
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+
+.input_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form {
+    background-color: #e2abdb;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+}
+  
+.title {
+    display: block;
+    color: #0097a9;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+  
+.subtitle {
+    display: block;
+    color: #0097a9;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.logo_register_small {
+    height: 20vh;
+    margin-bottom: 0;
+}
+  
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 40%;
+}
+  
+.ic1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+  
+.ic2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+  
+.input {
+    background-color: #e6f5f6;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #0097a9;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+  
+.cut {
+    background-color: #e2abdb;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50%;
+}
+  
+.cut-short {
+    width: 50%;
+}
+  
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+  
+.placeholder {
+    color: #0097a9;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+  
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+  
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #0097a9;
+}
+  
+.input:focus ~ .placeholder {
+    color: #e6f5f6;
+}
+  
+.submit {
+    background: #0097a9;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #e6f5f6;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+  
+.submit:active {
+    background-color: #06b;
+}
+
+.price_wrap small {
+    font-size: 3rem;
+    color: #db3eb1;
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    line-height: 0.7;
+}
+
+.cost > span {
+    margin-top: 0;
+}
+
+.cost_currency {
+    color: #db3eb1;
+    font-size: 2rem;
+    justify-self: self-start;
+}
+
+.cost_zloty {
+    color: #db3eb1;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.end_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 1367px) {
+
+    .flex_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_wrap {
+        max-width: 45%;
+    }
+   
+    .title {
+        font-size: 2rem; 
+    }
+
+    .logo_register_small {
+        padding-left: 0;
+    }
+
+    .image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input_wrap {
+        width: 100%;
+    }
+
+    .img_wrap {
+        max-width: 45%;
+    }
+
+    .price_wrap {
+        max-width: 45%;
+    }
+
+    .price_wrap small {
+        font-size: 1.5rem;
+    }
+
+    .cost_zloty {
+        font-size: 4rem;
+    }
+
+    .end_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 968px) {
+
+        .input_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .input-container {
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 844px) {
+
+        .text_wrap {
+            padding-top: 0;
+
+        }
+
+        .title {
+            font-size: 1.4rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+        }
+
+        .logo_register_small {
+            height: 10vh;
+        }
+
+        .placeholder {
+            line-height: 0.9rem;
+        }
+    }
+
+    @media screen and (max-width: 754px) {
+
+        .logo_register_small {
+            display: none;
+        }
+
+        .text_wrap {
+            max-width: 100%;
+        }
+
+        .end_wrap {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .price_wrap {
+            align-self: center;
+            padding-top: 1rem;
+        }
+
+        .logo_register {
+            max-width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 653px) {
+        .text_wrap {
+            padding-left: 1rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+        }
+
+        .submit {
+            font-size: 0.7rem;
+        }
+
+        .placeholder {
+            font-size: 0.7rem;
+        }
+
+        .price_wrap small {
+            font-size: 1.2rem;
+        }
+
+        .cost_zloty {
+            font-size: 3rem;
+        }
+
+        .cost_currency {
+            font-size: 1rem;
+        }
+
+    }
+
+    @media screen and (max-width: 442px) {
+
+        .text_wrap {
+            padding-left: 0;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+        }
+
+        .placeholder {
+            padding-left: 0.1rem;
+        }
+
+    }
+
+
+
+}
+  

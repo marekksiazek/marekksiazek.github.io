@@ -1,0 +1,181 @@
+:root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+.container {
+    max-width: 30vw;
+    width: 100%;
+    margin: 10vh auto;
+    background: #e6f5f6;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.pic {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+}
+
+.pic img {
+    max-width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+    color: #db3eb1;
+    text-transform: uppercase;
+}
+
+label, .links, button {
+    margin-top: 1rem;
+}
+
+label {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #db3eb1;
+    font-weight: 600;
+}
+
+.input {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #0097a9;
+    color: #e6f5f6;
+}
+
+button {
+    background: #db3eb1;
+    margin-top: 2rem;
+    padding: 0.7rem;
+    border: 0;
+    border-radius: 10px;
+    color: #e6f5f6;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #e6f5f6;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width: 717px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .container {
+        max-width: 90vw;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 637px) {
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+    
+    label {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 717px) {
+
+    .title {
+        font-size: 0.7rem;
+    }
+
+    button {
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    .title {
+        margin-top: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    label {
+        font-size: 0.4rem;
+    }
+
+    button {
+        margin-top: 0.8rem;
+        font-size: 0.4rem;
+        letter-spacing: 1px;
+    }
+    .input {
+        padding: 0.2rem;
+        font-size: 0.4rem;
+    }
+
+    .pic img {
+        max-width: 80%;
+    }
+
+    label, .links, button {
+        margin-top: 0.5rem;
+    }
+    
+}
