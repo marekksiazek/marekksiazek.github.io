@@ -67,6 +67,16 @@
 
 @media screen and (max-width: 1683px) {
 
+    .main_left  h1 {
+        font-size: 1.5rem;
+    }
+    .main_left p {
+        line-height: 1.8rem;
+        color: #0097a9;
+        font-size: 1rem;
+    
+    }
+
     .main_right h2 {
        font-size: 1.5rem;
     }
@@ -87,8 +97,7 @@
 @media screen and (max-width: 1081px) { 
 
     .main_left {
-        margin: 1rem;
-        padding: 2.5rem;
+        padding: 1rem;
     }
 
     .main_left  h1 {
@@ -102,8 +111,7 @@
     }
 
     .main_right {
-        margin: 1rem;
-        padding: 2.5rem;
+        padding: 1rem;
     }
 
     .main_right  h1 {
