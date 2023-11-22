@@ -123,7 +123,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
 }
 
 .photo_background_childrens {
@@ -145,8 +145,9 @@ body {
 
 .photo_background_women {
     width: 45%;
-    height: 30%;
+    height: 35%;
     display: flex;
+    margin-top: 5rem;
     align-items: center;
     justify-content: center;
     background-color: rgba(219, 62, 177, 0.4);
@@ -245,11 +246,6 @@ body {
         letter-spacing: 1px;
     }
 
-    .download > a + a {
-        margin: 0 2rem;
-    }
-
-
 }
 
 
@@ -316,18 +312,16 @@ body {
         line-height: 0.9rem;
     }
 
+    .download > a {
+        font-size: 0.9rem;
+    }
 
 }
 
 @media screen and (max-width: 970px) {
     .download > a {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
-
-    .download > a + a {
-        margin: 0 1rem;
-    }
-
 
 }
 
@@ -418,11 +412,14 @@ body {
         font-size: 0.5rem;
     }
 
-    .download > a + a {
-        margin: 0 0.5rem;
+
+}
+
+@media screen and (max-width: 700px) {
+    .download > a {
+        font-size: 0.4rem;
+        padding: 0.3rem 0.4rem;
     }
-
-
 }
 
 
@@ -456,9 +453,29 @@ body {
         width: 95%;
         margin-bottom: 3rem;
     }
+    .download > a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
 
 
 }
+
+@media screen and (max-width: 500px) {
+
+    .download > a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+
+    .download > a {
+        font-size: 0.5rem;
+        padding: 0.3rem, 0.4rem;
+    }
+}
+
 
 
 

@@ -1,6 +1,5 @@
 .main_left {
     background-color: #e6f5f6;
-    margin: 2rem;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -22,7 +21,6 @@
 
 .main_right {
     background-color: #e6f5f6;
-    margin: 2rem;
     margin-top: 5rem;
     padding: 1rem;
     border-radius: 1rem;
