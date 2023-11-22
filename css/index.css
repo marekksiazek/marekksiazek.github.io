@@ -145,6 +145,7 @@ body {
 
 .photo_background_women {
     width: 45%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +157,7 @@ body {
 .photo_background_women img {
     max-height: 80%;
     max-width: 80%;
-    transform: rotate(5deg);
+    transform: scale(1.2, 1.2) rotate(5deg);
     border-radius: 1rem;
 }
 
@@ -173,7 +174,7 @@ body {
 }
 
 .main_right  h2 {
-    width: 80%;
+    width: fit-content;
     margin: 0 auto;
     margin-bottom: 0.8rem;
     color: #db3eb1;
@@ -186,9 +187,9 @@ body {
 .download {
     width: 100%;
     margin-top: 1rem;
-    padding: 3rem;
+    padding: 1rem;
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -199,15 +200,10 @@ body {
     padding: .5rem 1rem;
     color: #e6f5f6;
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
     background-color: #db3eb1;
     border-radius: 20px;
-}
-
-.download > a + a {
-    margin: 0 3rem;
 }
 
 .footer_background {

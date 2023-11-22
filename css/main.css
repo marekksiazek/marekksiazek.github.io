@@ -1,8 +1,8 @@
 .main_left {
     background-color: #e6f5f6;
     margin: 2rem;
-    padding: 5rem;
-    border-radius: 20% 20%;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .main_left  h1 {
@@ -13,9 +13,8 @@
     letter-spacing: 2px;
     margin-left: 1rem;
 }
-
 .main_left p {
-    line-height: 2rem;
+    line-height: 1.8rem;
     color: #0097a9;
     font-size: 1.2rem;
 
@@ -25,8 +24,9 @@
     background-color: #e6f5f6;
     margin: 2rem;
     margin-top: 5rem;
-    padding: 5rem;
-    border-radius: 20% 20%;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
 }
 
 .main_right  h1 {
@@ -34,6 +34,7 @@
     text-align: end;
     text-transform: uppercase;
     font-weight: 900;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     margin-right: auto;
 }
@@ -41,28 +42,47 @@
 .main_right p {
     line-height: 2rem;
     color: #0097a9;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: left;
 
+}
+
+.main_right ul {
+    text-align: left;
+}
+
+.main_right h2 {
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .buy_course_in_div {
     background-color:#db3eb1;
-    float: inline-end;
     border-radius: 30px;
     padding: 0.3rem 2rem;
-    margin-top: 1rem;
-    margin-left: 40%;
     color: #e6f5f6;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+}
+
+@media screen and (max-width: 1683px) {
+
+    .main_right h2 {
+       font-size: 1.5rem;
+    }
+    
+
+    .buy_course_in_div {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1455px) {
 
     .buy_course_in_div {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
