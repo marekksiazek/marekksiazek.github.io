@@ -13,14 +13,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
 
         require_once 'dbh.inc.php';
-        require_once 'register_model.inc.php';
+        // require_once 'register_model.inc.php';
         require_once 'register_contr.inc.php';
-
-
-
         require_once 'config_session.inc.php';
 
+        function getUser2(object $mysqli, string $user_email) {
 
+            $query = "SELECT * FROM users WHERE user_email = (?)";
+            $stmt = $mysqli->prepare($query);
+            mysqli_stmt_bind_param($stmt, 's', $user_email);
+            $stmt->execute();
+
+            $result = $stmt->fetch();
+            var_dump($result);
+            return $result;
+        }
+
+        $user = getUser2($mysqli, $user_email);
+
+        if ($user) {
+            header("Location: ../userExists.php");
+        };
 
         createUser($mysqli,  $first_name,  $last_name,  $user_email,  $user_pwd,  $user_pesel,  $user_phone);
 
@@ -30,6 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = null;
 
         die();
+
+      
+
     } catch (Exception $e) {
         die("Query failed: " . $e->getMessage());
     }

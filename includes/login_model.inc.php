@@ -10,5 +10,5 @@ function getUser(object $mysqli, string $user_email)
     $stmt->execute();
 
     $result = $stmt->fetch();
-    return $result;
+    return $result[0];
 }

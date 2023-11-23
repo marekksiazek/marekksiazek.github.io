@@ -25,8 +25,8 @@
                     <li class="nav_item"><a href="#about_us">O kursie</a></li>
                     <li class="nav_item"><a href="#about_course">Program kursu</a></li>
                     <li class="nav_item"><a href="#contact">Kontakt</a></li>
-                    <li class="nav_item buy_course"><a href="/register.html">Kup kurs</a></li>
-                    <li class="nav_item_right"><a href="/login.html">Zaloguj się</a></li>
+                    <li class="nav_item buy_course"><a href="/register.php">Kup kurs</a></li>
+                    <li class="nav_item_right"><a href="/login.php">Zaloguj się</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,8 +38,8 @@
                     <a href="#about_us" style="animation-delay: 0.2s;">O kursie</a>
                     <a href="#about_course" style="animation-delay: 0.3s;">Program kursu</a>
                     <a href="#contact" style="animation-delay: 0.4s;">Kontakt</a>
-                    <a href="/register.html" style="animation-delay: 0.5s;">Kup kurs</a>
-                    <a href="/login.html">Zaloguj się</a>
+                    <a href="/register.php" style="animation-delay: 0.5s;">Kup kurs</a>
+                    <a href="/login.php">Zaloguj się</a>
                 </nav>
             </div>
         </div>
@@ -84,7 +84,7 @@
                         Ponadto kursant otrzymuje wzór dziennika praktyk.
                     </p>
                     <h2>Cena kursu: 699zł</h2>
-                    <a href="/register.html" class="buy_course_in_div">Kupuję kurs</a>
+                    <a href="/register.php" class="buy_course_in_div">Kupuję kurs</a>
                 </div>
             </main>
         </div>

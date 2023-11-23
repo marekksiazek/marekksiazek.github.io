@@ -23,15 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         require_once "config_session.inc.php";
 
 
-        // $newSessionId = session_create_id();
-        // $sessionId = $newSessionId . "_" . $result["id"];
-        // session_id($sessionId);
-
-        // $_SESSION["user_id"] = $result["id"];
-        // $_SESSION["user_email"] = htmlspecialchars($result["user_name"]);
-
-        // $_SESSION["last_regeneration"] = time();
-
         header("Location: ../video.php?login=success");
         $mysqli = null;
         $stmt = null;

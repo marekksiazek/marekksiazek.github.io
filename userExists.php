@@ -17,8 +17,8 @@
         <div class="pic">
             <img src="/assets/customcolor/full/customcolor_logo_transparent_background.png" alt="" srcset="">
         </div>
-        <h2>Błędny login lub hasło.</h2>
-        <a href="./login.html">Powrót do strony logowania</a>
+        <h2>Podany e-mail jest już wykorzystywany.</h2>
+        <a href="./login.php">Powrót do strony logowania</a>
     </div>
 </body>
 
