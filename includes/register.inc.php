@@ -13,9 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
 
         require_once 'dbh.inc.php';
-        // require_once 'register_model.inc.php';
         require_once 'register_contr.inc.php';
         require_once 'config_session.inc.php';
+        require_once '../openpayu_php/lib/openpayu.php';
+        require_once '../openpayu_php/examples/config.php';
+        require_once '../openpayu_php/examples/v2/order/OrderCreate.php';
 
         function getUser2(object $mysqli, string $user_email) {
 
@@ -37,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         createUser($mysqli,  $first_name,  $last_name,  $user_email,  $user_pwd,  $user_pesel,  $user_phone);
 
-        header("Location: ../index.php");
+        header("Location: "  .  $response->getResponse()->redirectUri);
 
         $mysqli = null;
         $stmt = null;
